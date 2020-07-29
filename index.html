@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="https://kit.fontawesome.com/57084dc295.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+    <title>Galeria de fotos - Alianny Lockhart</title>
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <div class="logo">
+                <h1>Alianny Nicole</h1>
+                <p>Galeria de fotos</p>
+            </div>
+            <form action="">
+               <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+            </form>
+            <div class="categoria" id="categoria">
+                <a href="#" class="activo">Todos</a>
+                <a href="#">Personas</a>
+                <a href="#">Animales</a>
+                <a href="#">Naturaleza</a>
+                <a href="#">Paisajes</a>
+
+            </div>
+        </header>
+        
+        <section class="grid" id="grid">
+            <div class="item" 
+                data-categoria="animales" 
+                data-etiqueta="leon animales felino "
+                data-descripcion="El león es un mamífero carnívoro de la familia de los félidos ">
+                <div class="item-contenido">
+                   <img src="img/animal1.png" alt="">
+                </div>
+            </div>    
+            
+            <div class="item" 
+                data-categoria="paisajes" 
+                data-etiqueta="paisaje rocas nuves"
+                data-descripcion="Hermoso paisaje que deslumbra el alma">
+                <div class="item-contenido">
+                    <img src="img/paisaje2.png" alt="">
+                </div>
+            </div>  
+
+            <div class="item" 
+                data-categoria="naturaleza" 
+                data-etiqueta="naturaleza verde hojas arboles"
+                data-descripcion=" Las verduras de hoja verde son una excelente fuente de vitaminas, 
+                minerales y fibra a incluir en nuestra dieta habitual">
+                <div class="item-contenido">
+                    <img src="img/naturaleza1.png" alt="">
+                </div>
+            </div> 
+
+            <div class="item" 
+                data-categoria="personas" 
+                data-etiqueta="persona gente "
+                data-descripcion=" Si quieres descubrir el verdadero carácter de una persona, 
+                es suficiente con observar lo que le apasiona.">
+                <div class="item-contenido">
+                    <img src="img/persona1.png" alt="">
+                </div>
+            </div> 
+
+            <div class="item" 
+                 data-categoria="ciudad" 
+                data-etiqueta="carro ciudad calle torre"
+                data-descripcion=" «New York City’s the place where they said, ‘Hey, babe, Take a walk on the wild side», Lou Reed ">
+                <div class="item-contenido">
+                    <img src="img/ciudad1.png" alt="">
+                </div>
+            </div> 
+            <div class="item" 
+             data-categoria="Animales" 
+                data-etiqueta="animales panda bambu"
+                data-descripcion=" «El panda, oso panda o panda gigante es una especie de mamífero del orden de los carnívoros
+                 y aunque hay una gran controversia al respecto ">
+                <div class="item-contenido">
+                    <img src="img/animal2.png" alt="">
+                </div>
+            </div> 
+            <div class="item" 
+             data-categoria="paisajes" 
+                data-etiqueta="playa mar paisaje "
+                data-descripcion=" «La frambuesa, conocida también como fresa del bosque, 
+                es un hermoso fruto del frambueso o sangüeso, planta que crece silvestre en todos los países  ">
+                <div class="item-contenido">
+                    <img src="img/paisaje1.png" alt="">
+                </div>
+            </div>
+
+            <div class="item" 
+                 data-categoria="ciudad" 
+                    data-etiqueta="playa mar atardecer "
+                     data-descripcion=" «El sol brilla en todas partes, no sólo en la playa.">
+                <div class="item-contenido">
+                    <img src="img/ciudad2.png" alt="">
+                </div>
+           </div>
+
+
+           <div class="item" data-categoria="personas" data-etiqueta="persona gente"data-descripcion=" « Prefiero ser una pequeña rara, que una gran aburrida">
+                <div class="item-contenido">
+                     <img src="img/persona2.png" alt="">
+                </div>
+            </div>
+
+           
+         </section>
+
+         <section class="overlay" id="overlay">
+             <div class="contenedor-img">
+                 <button id="btn-cerrar"><i class="fas fa-times"></i></button>
+                 <img src="" alt="">
+             </div>
+             <p class="descripcion"></p>
+
+         </section>
+
+
+
+
+
+    </div>
+    <script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+    <script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+    <script src="/js/javascrip.js"></script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background: #f3f3f3;
+     font-family: 'Open Sans', sans-serif;;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+.contenedor{
+    width: 98%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/*Header*/
+header{
+    padding: 40px 0;
+}
+
+header .logo{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header .logo p{
+    color: #9b9b9b;
+}
+form{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+header .barra-busqueda{
+    width: 70%;
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    padding: 0 20px;
+    border-radius: 100px;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+}
+
+header .categoria{
+    display: flex;
+    justify-content: center;
+    /*estoy sirve paara que cuando agregue mas elemento o cuando no cabe se pongan debajo*/
+    flex-wrap: wrap;
+
+
+}
+header .categoria a{
+    color: #9b9b9b;
+    margin: 10px 20px;
+    font-size: 16px;
+    /*para poner los links en negrita*/
+    font-weight: 700;
+}
+
+header .categoria a.activo{
+    color: #000;
+}
+
+/*grid*/
+
+.grid{
+    position: relative;
+    width: 100%;
+    /*estoy son elemento que use para trabajar en el javascrip para que que cuando cargue la pagina
+    se se mestren toda no una una*/
+    opacity: 0;
+    transition: opacity 0.5s linear 1s;
+}
+  /*estoy son elemento que use para trabajar en el javascrip para que que cuando cargue la pagina
+    se se mestren toda no una una*/
+.grid.imagenescargadas{
+    opacity: 1;
+}
+
+.grid .item{
+    position: absolute;
+    display: block;
+    padding: 0;
+    margin: 10px;
+    /*puedes realizar cálculos para determinar valores de propiedades CSS. ojo(aprender mas tarde!)*/
+    width: calc(33.33% - 30px)
+   
+
+}
+
+.grid .item-contenido{
+    position: relative;
+
+}
+
+.grid .item img{
+    width: 100%;
+    cursor: pointer;
+     vertical-align: top;
+}
+
+/*overlay*/
+.overlay{
+    position: fixed;
+    top: 0;
+    border: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .9);
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.overlay.activo{
+    display: flex;
+
+}
+
+.overlay img{
+    max-width: 100%;
+
+}
+
+.overlay .descripcion{
+    display: block;
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 5px;
+    border-radius: 10px;
+    max-width: 50% ;
+
+}
+/*para poner le poston arriba del contenedor*/
+
+.contenedor-img{
+    position: relative;
+
+}
+
+.overlay #btn-cerrar{
+    background: none;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    right: -20px;
+    top: -20px;
+
+}
